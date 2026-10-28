@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://orbita-store.github.io/sitemap.xml
