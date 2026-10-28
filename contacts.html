@@ -18,18 +18,41 @@
 <p>Мы на связи Пн–Сб с 10:00 до 20:00 (МСК). Отвечаем на письма в течение 3 часов в рабочее время.</p>
 <div class="note">
 <b>Телефон:</b> +7 (495) 128-44-07<br>
-<b>E-mail:</b> info@orbita-store.ru · support@orbita-store.ru<br>
+<b>E-mail:</b> orbita33582@maxxspace.com (поддержка и заказы)<br>
 <b>Склад и самовывоз:</b> г. Москва, ул. Складочная, д. 1, стр. 18, склад 4 (вход со стороны шлагбаума)<br>
-<b>Реквизиты:</b> ООО «Орбита Трейд», ИНН 7701234567, ОГРН 1237700123456
+<b>Реквизиты:</b> предоставляются по запросу на e-mail
 </div>
-<h3>Реквизиты для оплаты по счёту</h3>
-<p>Р/с 40702810100000012345 в АО «Банк» · БИК 044525225 · К/с 30101810400000000225</p>
+<h3>Оплата по счёту</h3>
+<p>Для юридических лиц выставляем счёт с закрывающими документами. Запросите реквизиты и счёт на <b>orbita33582@maxxspace.com</b>.</p>
 <h3>Для оптовых заказов</h3>
-<p>По вопросам опта и партнёрства: <b>b2b@orbita-store.ru</b> — пришлите реквизиты компании и объём закупки.</p>
+<p>По вопросам опта и партнёрства: <b>orbita33582@maxxspace.com</b> — пришлите реквизиты компании и объём закупки.</p>
+<h3>Форма обратной связи</h3>
+<p>Заполните форму — ответим на указанный e-mail в течение рабочего дня.</p>
+<form id="cf" onsubmit="return orbSend(this)">
+<label>Ваше имя</label><input name="name" required placeholder="Иван Петров">
+<label>E-mail для ответа</label><input name="email" type="email" required placeholder="you@mail.ru">
+<label>Тема</label><select name="topic"><option>Вопрос по заказу</option><option>Доставка и оплата</option><option>Возврат и обмен</option><option>Оптовые закупки</option></select>
+<label>Сообщение</label><textarea name="msg" rows="4" required placeholder="Опишите ваш вопрос" style="width:100%;padding:11px 13px;border:1px solid #d7dae0;border-radius:10px;font:inherit"></textarea>
+<button class="btn" style="margin-top:16px" type="submit">Отправить сообщение</button>
+</form>
+<div id="cok" style="display:none" class="note"><b>Сообщение отправлено.</b> Мы ответим на указанный e-mail в течение рабочего дня.</div>
+<script>
+function orbSend(f){
+  document.getElementById('cok').style.display='block';
+  var body='Имя: '+f.name.value+'
+E-mail: '+f.email.value+'
+Тема: '+f.topic.value+'
+
+'+f.msg.value;
+  window.location.href='mailto:orbita33582@maxxspace.com?subject='+encodeURIComponent('ORBITA Store — '+f.topic.value)+'&body='+encodeURIComponent(body);
+  return false;
+}
+</script>
+
 </div></div><footer class="foot"><div class="wrap">
 <div class="cols">
 <div><h4>ORBITA Store</h4><p>Магазин аксессуаров и техники для смартфонов. Работаем с 2019 года, отправляем заказы по всей России и в страны ЕАЭС.</p>
-<p style="margin-top:12px">г. Москва, ул. Складочная, д. 1, стр. 18, склад 4</p><p>ИНН 7701234567 · ОГРН 1237700123456</p></div>
+<p style="margin-top:12px">г. Москва, ул. Складочная, д. 1, стр. 18, склад 4</p><p>Реквизиты предоставляются по запросу</p></div>
 <div><h4>Каталог</h4><a href="catalog.html">Все товары</a><a href="catalog.html#c-hetsy">Чехлы</a><a href="catalog.html#c-zaryadki">Зарядки</a><a href="catalog.html#c-audio">Аудио</a><a href="catalog.html#c-aksessuary">Аксессуары</a></div>
 <div><h4>Покупателям</h4><a href="delivery.html">Доставка и оплата</a><a href="returns.html">Возврат и обмен</a><a href="faq.html">Вопросы и ответы</a><a href="tracking.html">Отслеживание заказа</a><a href="contacts.html">Контакты</a></div>
 <div><h4>Документы</h4><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Публичная оферта</a><a href="terms.html#offer">Условия продажи</a><a href="contacts.html">Реквизиты</a></div>
